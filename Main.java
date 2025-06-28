@@ -5,7 +5,7 @@ public class Main {
 
         Pelicula pelicula2 = new Pelicula("Inception");
 
-        Pelicula pelicula3 = new Pelicula("Interstellar", "Christopher Nolan", 169);
+        Pelicula pelicula3 = new Pelicula("Cars", "John Lasseter", 117);
 
         pelicula1.mostrarInfo();
         pelicula2.mostrarInfo();
