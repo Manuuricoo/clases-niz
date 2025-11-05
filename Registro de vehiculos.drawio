@@ -1,0 +1,72 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0" pages="2">
+  <diagram name="Página-1" id="wcCfEud9NT2NICffnJvU">
+    <mxGraphModel dx="872" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-1" value="&lt;b&gt;Vehiculo&lt;/b&gt;&#xa;(abstract)" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="230" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-2" value="- patente: String&#xa;- año: int&#xa;- dueño: String" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-1">
+          <mxGeometry y="40" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-3" value="+ mostrarDatos(): void&#xa;+ calcularImpuesto(): double (abstract)" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-1">
+          <mxGeometry y="100" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-4" value="&lt;b&gt;Auto&lt;/b&gt;" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="430" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-5" value="- cantidadPuertas: int" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-4">
+          <mxGeometry y="40" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-6" value="+ mostrarDatos(): void&#xa;+ calcularImpuesto(): double" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-4">
+          <mxGeometry y="70" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-7" value="&lt;b&gt;Moto&lt;/b&gt;" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="430" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-8" value="- cilindrada: int" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-7">
+          <mxGeometry y="40" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-9" value="+ mostrarDatos(): void&#xa;+ calcularImpuesto(): double" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-7">
+          <mxGeometry y="70" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-10" value="&lt;b&gt;Camion&lt;/b&gt;" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="430" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-11" value="- cargaMaxima: double" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-10">
+          <mxGeometry y="40" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-12" value="+ mostrarDatos(): void&#xa;+ calcularImpuesto(): double" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-10">
+          <mxGeometry y="70" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-13" value="&lt;b&gt;RegistroMunicipal&lt;/b&gt;" style="swimlane;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="230" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-14" value="- vehiculos: List&lt;Vehiculo&gt;" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-13">
+          <mxGeometry y="40" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-15" value="+ agregarVehiculo(v): void&#xa;+ buscarPorAño(): void&#xa;+ buscarPorDueño(): void" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="RchZo4CV_Tuq3N8XFd4Q-13">
+          <mxGeometry y="70" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-16" style="endArrow=block;html=1;" edge="1" parent="1" source="RchZo4CV_Tuq3N8XFd4Q-4" target="RchZo4CV_Tuq3N8XFd4Q-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-17" style="endArrow=block;html=1;" edge="1" parent="1" source="RchZo4CV_Tuq3N8XFd4Q-7" target="RchZo4CV_Tuq3N8XFd4Q-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RchZo4CV_Tuq3N8XFd4Q-18" style="endArrow=block;html=1;" edge="1" parent="1" source="RchZo4CV_Tuq3N8XFd4Q-10" target="RchZo4CV_Tuq3N8XFd4Q-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wazAVLhdt48TnuDKTmdV" name="Página-2">
+    <mxGraphModel dx="872" dy="473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
